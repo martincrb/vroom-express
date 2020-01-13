@@ -33,8 +33,8 @@ const cliArgs = minimist(process.argv.slice(2), {
 // and ors.
 const routingServers = {
   car: {
-    host: '0.0.0.0',
-    port: '5000'
+    host: process.env.OSRM_HOST,
+    port: process.env.OSRM_PORT
   }
 };
 
